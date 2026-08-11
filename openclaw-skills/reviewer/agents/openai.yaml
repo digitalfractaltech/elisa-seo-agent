@@ -1,0 +1,4 @@
+name: reviewer
+display_name: "Reviewer"
+short_description: "Quality gate for Emily SEO outputs. Use after any SEO skill produces findings, reports, proposed edits, tickets, recommendations, outreach drafts, or vault note"
+default_prompt: "Use the reviewer skill."

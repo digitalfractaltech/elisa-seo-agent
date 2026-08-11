@@ -1,0 +1,4 @@
+name: keyword-batch-prioritizer
+display_name: "Keyword Batch Prioritizer"
+short_description: "Prioritize and batch large keyword sets so Emily tackles the highest-impact keywords first without exceeding context, time, or tool limits. Use to select top 10"
+default_prompt: "Use the keyword-batch-prioritizer skill."

@@ -1,0 +1,4 @@
+name: rank-stuck-diagnostic
+display_name: "Rank Stuck Diagnostic"
+short_description: "Diagnose why an existing page is not ranking to its potential without editing it. Use for rank drops, pages stuck below target, or before deciding whether to tu"
+default_prompt: "Use the rank-stuck-diagnostic skill."

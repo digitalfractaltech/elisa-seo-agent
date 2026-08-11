@@ -1,0 +1,4 @@
+name: image-alt-optimizer
+display_name: "Image Alt Optimizer"
+short_description: "Optimize images and alt text on an existing page using live SERP/image benchmarks. Use when images are missing, decorative, weakly described, duplicated, irrele"
+default_prompt: "Use the image-alt-optimizer skill."

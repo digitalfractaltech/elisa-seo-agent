@@ -1,0 +1,4 @@
+name: site-architecture-mapper
+display_name: "Site Architecture Mapper"
+short_description: "Map the entire website into SEO architecture tiers and topic relationships before internal linking. Use to classify money pages, supporting pages, local/city pa"
+default_prompt: "Use the site-architecture-mapper skill."

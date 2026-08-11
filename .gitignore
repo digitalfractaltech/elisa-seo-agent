@@ -1,0 +1,41 @@
+# Local/editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local credentials, runtime state, and generated data
+.env
+.env.*
+!.env.example
+config/local.env
+*.db
+*.sqlite
+*.sqlite3
+memory/
+runs.log
+
+# Packaging duplicates and local archives
+*.zip
+emily-openclaw-skills/
+emily-cumulative-skill-update-v1-to-current/
+
+# Copied third-party source page; use the public reference link instead
+source-on-page-ai-automate-seo.html
+
+# Legacy duplicate landing pages; Elisa is authoritative
+aria-seo-agent-landing-page.html
+emily-seo-agent-landing-page.html
+
+# Historical/internal planning artifacts superseded by README and docs/
+PRODUCTIZATION_AUDIT.md
+emily-recipe-to-skill-map.md
+emily-skills-catalog.md
+emily-v2-strategy.md
+inject_original_recipes.py
+bootstrap_emily_skills.py
+productized-vault-system/SECRET_MANAGER_BITWARDEN.md
+
+# Private/local publication drafts; do not commit
+elisa-launch-tweet.txt
+elisa-proof-of-work-blog-post.md

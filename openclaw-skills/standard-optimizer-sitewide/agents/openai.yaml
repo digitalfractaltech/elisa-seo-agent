@@ -1,0 +1,4 @@
+name: standard-optimizer-sitewide
+display_name: "Standard Optimizer Sitewide"
+short_description: "Run standard optimization across a site in controlled sitemap batches with manifest, oldest modified first, Standard scans, rescans, entity tuning loops, and re"
+default_prompt: "Use the standard-optimizer-sitewide skill."

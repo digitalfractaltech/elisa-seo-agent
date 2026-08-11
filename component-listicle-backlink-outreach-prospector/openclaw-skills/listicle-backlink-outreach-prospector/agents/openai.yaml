@@ -1,0 +1,4 @@
+name: listicle-backlink-outreach-prospector
+display_name: "Listicle Backlink Outreach Prospector"
+short_description: "Find, qualify, score, and queue ethical listicle/resource-page backlink outreach opportunities for target pages and keywords."
+default_prompt: "Use the listicle-backlink-outreach-prospector skill."

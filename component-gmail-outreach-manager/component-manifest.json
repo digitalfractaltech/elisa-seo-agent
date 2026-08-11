@@ -1,0 +1,9 @@
+{
+  "component": "gmail-outreach-manager",
+  "created": "2026-05-27",
+  "installs": [
+    "openclaw-skills/gmail-outreach-manager"
+  ],
+  "does_not_overwrite_existing_project_vaults": true,
+  "notes": "Standalone Emily component for approved Gmail outreach sending and response tracking."
+}

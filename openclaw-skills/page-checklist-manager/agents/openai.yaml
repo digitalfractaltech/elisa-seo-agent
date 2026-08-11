@@ -1,0 +1,4 @@
+name: page-checklist-manager
+display_name: "Page Checklist Manager"
+short_description: "Create and maintain persistent per-page SEO checklists in Obsidian. Use to track audits, scans, recommendations, approvals, implementation status, rescans, and "
+default_prompt: "Use the page-checklist-manager skill."

@@ -1,0 +1,4 @@
+name: local-page-tuner
+display_name: "Local Page Tuner"
+short_description: "Tune an existing local service/location page based on what wins in the target city. Use after local diagnosis or for target market(s) local pages needing servic"
+default_prompt: "Use the local-page-tuner skill."

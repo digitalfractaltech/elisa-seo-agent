@@ -1,0 +1,4 @@
+name: internal-link-builder-quick
+display_name: "Internal Link Builder Quick"
+short_description: "Fast lightweight internal linking pass for one target page. Use when the configured approver wants a simple scan, suggested source checks, and seamless link add"
+default_prompt: "Use the internal-link-builder-quick skill."

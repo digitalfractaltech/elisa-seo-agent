@@ -1,0 +1,4 @@
+name: content-refresher-single
+display_name: "Content Refresher Single"
+short_description: "Lightly refresh one existing page without rewriting it. Use for stale pages that need minor entity additions, related words, alt text updates, one optional para"
+default_prompt: "Use the content-refresher-single skill."

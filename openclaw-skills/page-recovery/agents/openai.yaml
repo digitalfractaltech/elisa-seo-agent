@@ -1,0 +1,4 @@
+name: page-recovery
+display_name: "Page Recovery"
+short_description: "Recover an indexed SEO page that is stuck below its expected ranking. Use for a target URL and keyword when the page exists, has rankings/impressions, and needs"
+default_prompt: "Use the page-recovery skill."

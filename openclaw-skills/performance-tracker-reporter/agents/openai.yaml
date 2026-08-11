@@ -1,0 +1,4 @@
+name: performance-tracker-reporter
+display_name: "Performance Tracker Reporter"
+short_description: "Track whether SEO performance is improving or degrading across rankings, GSC, GA4, conversion/revenue, On-Page.ai scores, AI-search visibility, backlinks, and c"
+default_prompt: "Use the performance-tracker-reporter skill."

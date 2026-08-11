@@ -1,0 +1,4 @@
+name: cms-draft-implementer
+display_name: "Cms Draft Implementer"
+short_description: "Implement approved SEO changes in a CMS/WordPress as drafts using browser automation, CMS UI, or API when configured. Use for on-page edits, internal links, hea"
+default_prompt: "Use the cms-draft-implementer skill."

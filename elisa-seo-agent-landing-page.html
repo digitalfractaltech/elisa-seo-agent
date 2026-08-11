@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ELISA SEO Intelligence Agent | Autonomous SEO Operations System</title>
+  <meta name="description" content="ELISA is a multi-agent SEO intelligence system that uses live SERP data, rank tracking, Search Console insights, site architecture mapping, and human-approved CMS workflows to improve organic search performance." />
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg2: #0c1a2d;
+      --card: rgba(255,255,255,0.07);
+      --card2: rgba(255,255,255,0.1);
+      --text: #eef6ff;
+      --muted: #a9bad0;
+      --accent: #65e4c3;
+      --accent2: #7aa7ff;
+      --line: rgba(255,255,255,0.14);
+      --white: #ffffff;
+      --shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(101,228,195,0.18), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(122,167,255,0.22), transparent 35%),
+        linear-gradient(180deg, var(--bg), #040910 55%, #07111f);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 28px 0; border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); position: sticky; top: 0; z-index: 10; background: rgba(7,17,31,0.75); }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: -0.02em; }
+    .mark { width: 34px; height: 34px; border-radius: 11px; background: linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow: 0 0 28px rgba(101,228,195,0.35); }
+    .navlinks { display: flex; gap: 22px; color: var(--muted); font-size: 14px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 18px; border-radius: 999px; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #04101d; font-weight: 800; text-decoration: none; box-shadow: 0 14px 34px rgba(101,228,195,0.22); }
+    .btn.secondary { background: rgba(255,255,255,0.08); color: var(--text); border: 1px solid var(--line); box-shadow: none; }
+    .hero { padding: 90px 0 70px; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 46px; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; font-size: 13px; }
+    h1 { font-size: clamp(42px, 6vw, 74px); line-height: 0.96; letter-spacing: -0.065em; margin: 18px 0 22px; }
+    .lead { font-size: 20px; color: var(--muted); max-width: 670px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 42px; }
+    .stat { padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,0.055); }
+    .stat b { display: block; font-size: 26px; color: var(--white); }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .terminal { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.04)); border-radius: 28px; padding: 20px; box-shadow: var(--shadow); }
+    .terminal-bar { display: flex; gap: 8px; margin-bottom: 18px; }
+    .dot { width: 11px; height: 11px; border-radius: 999px; background: #ff6b6b; }
+    .dot:nth-child(2) { background: #ffd166; }
+    .dot:nth-child(3) { background: #65e4c3; }
+    .terminal pre { margin: 0; white-space: pre-wrap; color: #dff7ff; font-size: 14px; }
+    section { padding: 76px 0; }
+    .section-head { max-width: 760px; margin-bottom: 34px; }
+    h2 { font-size: clamp(31px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.045em; margin: 0 0 16px; }
+    .section-head p { color: var(--muted); font-size: 18px; margin: 0; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { border: 1px solid var(--line); background: var(--card); border-radius: 24px; padding: 26px; box-shadow: 0 18px 50px rgba(0,0,0,0.16); }
+    .card h3 { margin: 0 0 10px; font-size: 21px; letter-spacing: -0.025em; }
+    .card p, .card li { color: var(--muted); }
+    .icon { width: 42px; height: 42px; border-radius: 14px; background: rgba(101,228,195,0.12); display: grid; place-items: center; color: var(--accent); margin-bottom: 18px; font-weight: 900; }
+    .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .step { position: relative; padding: 22px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,0.06); min-height: 170px; }
+    .step-num { color: var(--accent); font-weight: 900; font-size: 13px; }
+    .step h3 { font-size: 18px; margin: 8px 0; }
+    .step p { color: var(--muted); font-size: 14px; margin: 0; }
+    .split { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 34px; align-items: start; }
+    .list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+    .list li { padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,0.045); color: var(--muted); }
+    .list b { color: var(--text); }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill { border: 1px solid var(--line); background: rgba(255,255,255,0.055); color: var(--muted); padding: 9px 12px; border-radius: 999px; font-size: 14px; }
+    .reference-grid { align-items: stretch; }
+    .reference-card { display: flex; flex-direction: column; }
+    .reference-card p { flex: 1; }
+    .reference-card a { color: var(--accent); font-weight: 800; text-decoration: none; }
+    .reference-card a:hover { text-decoration: underline; }
+    .reference-note { color: var(--muted); font-size: 14px; margin: 22px 0 0; }
+    .highlight { background: linear-gradient(135deg, rgba(101,228,195,0.16), rgba(122,167,255,0.14)); border: 1px solid rgba(101,228,195,0.28); }
+    .cta { padding: 46px; border-radius: 34px; background: linear-gradient(135deg, rgba(101,228,195,0.18), rgba(122,167,255,0.17)); border: 1px solid rgba(255,255,255,0.18); box-shadow: var(--shadow); text-align: center; }
+    .cta h2 { margin-bottom: 12px; }
+    .cta p { color: var(--muted); max-width: 720px; margin: 0 auto 26px; font-size: 18px; }
+    footer { padding: 34px 0; color: var(--muted); border-top: 1px solid var(--line); }
+    @media (max-width: 900px) {
+      .hero-grid, .grid-3, .grid-2, .split, .flow { grid-template-columns: 1fr; }
+      .navlinks { display: none; }
+      .stats { grid-template-columns: 1fr; }
+      .hero { padding-top: 62px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="logo"><span class="mark"></span><span>ELISA SEO Intelligence Agent</span></div>
+        <div class="navlinks">
+          <a href="#how">How it works</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#use-cases">Use cases</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#references">References</a>
+        </div>
+        <a class="btn secondary" href="#references">See the foundations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Self-hosted, open-source AI agents for evidence-based SEO</div>
+          <h1>An autonomous SEO operating system for teams that want measurable growth.</h1>
+          <p class="lead">ELISA combines live SERP intelligence, keyword ranking snapshots, Google Search Console data, site architecture mapping, and human-approved CMS workflows to help businesses improve organic visibility without guessing. Run the application on your own machine and choose which AI and data services to connect.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#cta">See How ELISA Works</a>
+            <a class="btn secondary" href="#workflow">Explore the Workflow</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>34</b><span>registered SEO skills</span></div>
+            <div class="stat"><b>100%</b><span>audit-trail driven</span></div>
+            <div class="stat"><b>Human</b><span>approval before publishing</span></div>
+          </div>
+        </div>
+        <div class="terminal">
+          <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <pre>[ELISA] Project onboarding complete
+- Website verified
+- Money keywords loaded
+- DataForSEO baseline ready
+- GSC connection status checked
+- Optional SERP intelligence available
+
+Next action:
+Map sitemap hierarchy → catalogue keyword mentions → create contextual internal linking plan → draft CMS updates for approval.</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="wrap split">
+        <div class="section-head">
+          <h2>SEO has become too complex to manage manually.</h2>
+          <p>Modern SEO is no longer just titles, meta descriptions, and blog posts. Teams now need to understand rankings, site architecture, topical coverage, internal links, page quality, AI visibility, competitor entities, and technical issues — continuously.</p>
+        </div>
+        <ul class="list">
+          <li><b>Too many moving parts:</b> keywords, pages, internal links, rankings, content gaps, SERP features, and technical signals.</li>
+          <li><b>Too much guessing:</b> generic AI prompts often produce generic advice because they do not use live SERP evidence.</li>
+          <li><b>Too little tracking:</b> teams often make changes without a baseline or clear measurement window.</li>
+          <li><b>Too much manual work:</b> sitemap audits, page checks, and internal linking take hours when done by hand.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>ELISA turns SEO into an agent-led operating system.</h2>
+          <p>The system coordinates specialized AI skills that gather evidence, decide the next best task, create audit trails, and prepare changes for human approval.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="icon">1</div>
+            <h3>Onboard the project</h3>
+            <p>ELISA collects the website, sitemap, money keywords, geography, competitors, approval rules, CMS access, and data-source status. Every project gets its own Obsidian vault.</p>
+          </div>
+          <div class="card">
+            <div class="icon">2</div>
+            <h3>Establish the baseline</h3>
+            <p>DataForSEO captures explicit Google organic rankings. Google Search Console supplies impressions, clicks, CTR, and average position. ELISA stores snapshots over time.</p>
+          </div>
+          <div class="card">
+            <div class="icon">3</div>
+            <h3>Map the site</h3>
+            <p>The system audits the sitemap, classifies top-level money pages, secondary pages, location-oriented pages, blogs, and support content into a clear SEO hierarchy.</p>
+          </div>
+          <div class="card">
+            <div class="icon">4</div>
+            <h3>Find keyword-based link opportunities</h3>
+            <p>ELISA catalogues keyword mentions already present in pages and posts, maps them to target money pages, and creates contextual internal linking opportunities.</p>
+          </div>
+          <div class="card">
+            <div class="icon">5</div>
+            <h3>Optionally enhance with live SERP data</h3>
+            <p>When connected, On-Page.ai can add competitor-driven entity gaps, related words, page structure benchmarks, topical alignment, speed signals, and internal-link recommendations. The core workflow can still run without it.</p>
+          </div>
+          <div class="card">
+            <div class="icon">6</div>
+            <h3>Draft, verify, and report</h3>
+            <p>Approved changes can be prepared as CMS drafts. ELISA tracks what was done, why it was done, the expected goal, and whether performance improves or degrades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The workflow: from discovery to measurable improvement.</h2>
+          <p>ELISA is designed to reduce scattered SEO activity and replace it with a repeatable, evidence-based operating loop.</p>
+        </div>
+        <div class="flow">
+          <div class="step"><div class="step-num">STEP 01</div><h3>Onboard</h3><p>Create the project vault, collect business goals, data access, money keywords, and approval rules.</p></div>
+          <div class="step"><div class="step-num">STEP 02</div><h3>Baseline</h3><p>Capture initial rankings, GSC traffic, target URLs, and keyword-page mapping.</p></div>
+          <div class="step"><div class="step-num">STEP 03</div><h3>Audit</h3><p>Map the sitemap, inspect page hierarchy, scan priority pages, and identify gaps.</p></div>
+          <div class="step"><div class="step-num">STEP 04</div><h3>Implement</h3><p>Prepare approved internal links, on-page fixes, alt text, headings, and content refreshes as drafts.</p></div>
+          <div class="step"><div class="step-num">STEP 05</div><h3>Measure</h3><p>Run weekly checks, compare against baseline, and summarize improvements, degradations, and next actions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Benefits for businesses and marketing teams.</h2>
+          <p>ELISA is not just an SEO checklist. It is a system for making better SEO decisions faster, with better evidence and less manual busywork.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card highlight">
+            <h3>Evidence instead of guesswork</h3>
+            <p>Recommendations are based on live SERP data, competitor benchmarks, keyword rankings, Search Console data, and the actual structure of your website.</p>
+          </div>
+          <div class="card highlight">
+            <h3>Faster execution without losing control</h3>
+            <p>ELISA can prepare changes, but publishing remains approval-based. Teams get speed without giving up human judgment.</p>
+          </div>
+          <div class="card">
+            <h3>Better internal linking</h3>
+            <p>The system maps pages, posts, keywords, and hierarchy so internal links support the right money pages instead of being added randomly.</p>
+          </div>
+          <div class="card">
+            <h3>Clear reporting</h3>
+            <p>Ask for a report at any time. ELISA can summarize what was done, why it was done, what outcome was expected, and what results are visible so far.</p>
+          </div>
+          <div class="card">
+            <h3>Persistent project memory</h3>
+            <p>Every project gets its own Obsidian vault, so context, decisions, reports, checklists, and tracking history are preserved across sessions.</p>
+          </div>
+          <div class="card">
+            <h3>Built for ongoing SEO</h3>
+            <p>ELISA can monitor rankings, identify new opportunities, audit new content, refresh old pages, and keep the site architecture updated over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases">
+      <div class="wrap split">
+        <div>
+        <div class="section-head">
+          <h2>Use cases ELISA can support.</h2>
+            <p>From multi-location service sites to large content libraries, ELISA helps teams turn SEO strategy into a managed, measurable process.</p>
+          </div>
+          <div class="pill-row">
+            <span class="pill">Site architecture mapping</span>
+            <span class="pill">Service page optimization</span>
+            <span class="pill">Internal linking campaigns</span>
+            <span class="pill">Sitemap audits</span>
+            <span class="pill">Content refreshes</span>
+            <span class="pill">Keyword opportunity mining</span>
+            <span class="pill">AI search visibility</span>
+            <span class="pill">Ranking diagnostics</span>
+            <span class="pill">Client SEO reporting</span>
+            <span class="pill">CMS draft implementation</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Example: multi-location service business</h3>
+          <p>A service business wants to rank for high-value keywords across several locations. ELISA can onboard the project, capture baseline rankings, map service and blog pages, find keyword mentions across existing content, recommend contextual internal links, optionally run On-Page.ai scans on priority pages, prepare approved CMS drafts, and report weekly movement.</p>
+          <p>The result is a structured SEO improvement cycle instead of scattered one-off tasks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="references">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Built from practical SEO and agent-workflow foundations.</h2>
+          <p>ELISA combines public SEO workflow research, explicit rank data, project-separated memory, and the agent infrastructure developed during the build. These references explain where the system’s capabilities came from.</p>
+        </div>
+        <div class="grid-3 reference-grid">
+          <article class="card reference-card">
+            <div class="icon">SERP</div>
+            <h3>Live SERP workflow recipes</h3>
+            <p>A direct inspiration for the initial optimization, internal-linking, refresh, diagnostic, and audit workflow catalog was the public guide by <a href="https://x.com/ericlancheres" target="_blank" rel="noopener noreferrer">Eric Lancheres</a>, SEO researcher and founder of On-Page.ai. In ELISA, those ideas become guarded, resumable specialist workflows rather than copy-and-paste prompts.</p>
+            <a href="https://on-page.ai/pages/automate-seo/" target="_blank" rel="noopener noreferrer">Read the public workflow guide ↗</a>
+          </article>
+          <article class="card reference-card">
+            <div class="icon">RANK</div>
+            <h3>Rank and search-performance data</h3>
+            <p>DataForSEO supplies explicit Google organic rank snapshots, while Search Console and analytics provide first-party impressions, clicks, CTR, traffic, and trend context for each project baseline.</p>
+            <a href="https://dataforseo.com/" target="_blank" rel="noopener noreferrer">Explore DataForSEO ↗</a>
+          </article>
+          <article class="card reference-card">
+            <div class="icon">LOOP</div>
+            <h3>Agent loops and project memory</h3>
+            <p>The OpenClaw skill package, loop-controller protocol, and Obsidian-compatible vault model shaped ELISA’s run → check → decide → record cycle. Each project keeps its own state, decisions, reports, and checklists.</p>
+            <a href="#workflow">See the operating workflow ↗</a>
+          </article>
+          <article class="card reference-card">
+            <div class="icon">CASE</div>
+            <h3>Related AI-agent delivery work</h3>
+            <p>Our AI-powered workforce scheduling and resource-optimization platform work informed the same principles used here: specialized agents, operational state, decision support, measurable outcomes, and human control at critical points.</p>
+            <a href="https://digitalfractal.com/case-study/ai-powered-workforce-scheduling-resource-optimization-platform-2/" target="_blank" rel="noopener noreferrer">View the related case study ↗</a>
+          </article>
+          <article class="card reference-card">
+            <div class="icon">BUILD</div>
+            <h3>Self-hosted implementation blueprint</h3>
+            <p>The project’s design specification and implementation plan define the self-hosted web application, multiple AI providers, optional connectors, resumable jobs, CMS drafts, reporting, and validation boundaries.</p>
+            <a href="#system">See the safeguards and boundaries ↗</a>
+          </article>
+          <article class="card reference-card">
+            <div class="icon">OPEN</div>
+            <h3>Open and adaptable by design</h3>
+            <p>External providers are connectors, not requirements. Teams can configure the services they choose locally, keep credentials in local ignored configuration, and replace optional intelligence sources without changing the project memory model.</p>
+            <a href="#cta">Discuss an implementation ↗</a>
+          </article>
+        </div>
+        <p class="reference-note">Third-party names and links are provided as implementation references. Their pricing, terms, availability, and service limits are controlled by their respective providers; ELISA does not claim affiliation unless explicitly stated.</p>
+      </div>
+    </section>
+
+    <section id="system">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Designed for security, memory, and accountability.</h2>
+          <p>ELISA is built for real business operations, where access control, audit trails, and project separation matter.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><h3>Project-separated memory</h3><p>Each client or website has its own Obsidian vault. ELISA does not mix project context across clients.</p></div>
+          <div class="card"><h3>Local credential control</h3><p>API credentials remain in local, gitignored configuration and are never written to the project vault, reports, logs, or exports. Bitwarden can be added optionally when a team wants managed secret storage.</p></div>
+          <div class="card"><h3>Human approval gates</h3><p>Publishing, money-page edits, redirects, canonicals, and public content changes require approval unless explicitly pre-approved.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Want to turn SEO into an AI-powered operating system?</h2>
+          <p>Digital Fractal can help you design, configure, and deploy AI agents that monitor SEO performance, find opportunities, map your website, prepare draft changes, and produce clear reports your team can trust.</p>
+          <a class="btn" href="/contact/">Talk to Digital Fractal</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© Digital Fractal. AI agent systems for practical business growth.</div>
+  </footer>
+</body>
+</html>

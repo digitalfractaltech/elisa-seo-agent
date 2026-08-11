@@ -1,0 +1,4 @@
+name: dataforseo-rank-tracker-adapter
+display_name: "DataForSEO Rank Tracker Adapter"
+short_description: "Capture baseline and weekly Google organic SERP rankings from DataForSEO by keyword, location, device, depth, and ranking URL."
+default_prompt: "Use the dataforseo-rank-tracker-adapter skill."

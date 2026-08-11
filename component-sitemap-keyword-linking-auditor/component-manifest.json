@@ -1,0 +1,9 @@
+{
+  "component": "sitemap-keyword-linking-auditor",
+  "created": "2026-05-26",
+  "installs": [
+    "openclaw-skills/sitemap-keyword-linking-auditor"
+  ],
+  "does_not_overwrite_existing_project_vaults": true,
+  "notes": "Standalone Emily component for sitemap-wide keyword mention cataloguing and internal linking opportunity mapping."
+}

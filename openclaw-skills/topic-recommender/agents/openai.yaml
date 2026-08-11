@@ -1,0 +1,4 @@
+name: topic-recommender
+display_name: "Topic Recommender"
+short_description: "Recommend whether an SEO opportunity should become a top-level page, secondary page, local page, comparison page, blog/resource, FAQ, or update to an existing p"
+default_prompt: "Use the topic-recommender skill."

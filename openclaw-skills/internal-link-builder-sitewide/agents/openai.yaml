@@ -1,0 +1,4 @@
+name: internal-link-builder-sitewide
+display_name: "Internal Link Builder Sitewide"
+short_description: "Build internal links across a site in resumable batches from a sitemap manifest. Use when the configured approver asks for site-wide internal linking, batch pro"
+default_prompt: "Use the internal-link-builder-sitewide skill."

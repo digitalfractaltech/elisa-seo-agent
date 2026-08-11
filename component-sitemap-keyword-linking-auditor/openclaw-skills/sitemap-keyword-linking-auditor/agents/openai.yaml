@@ -1,0 +1,4 @@
+name: sitemap-keyword-linking-auditor
+display_name: "Sitemap Keyword Linking Auditor"
+short_description: "Crawl sitemap pages/posts, catalogue approved keyword mentions, map anchors to money pages, and create an internal linking plan."
+default_prompt: "Use the sitemap-keyword-linking-auditor skill."

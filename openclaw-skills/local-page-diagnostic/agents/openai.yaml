@@ -1,0 +1,4 @@
+name: local-page-diagnostic
+display_name: "Local Page Diagnostic"
+short_description: "Diagnose why a local service/location page is not ranking. Use for target market(s)/local keywords to evaluate technical/indexability, service-city relevance, N"
+default_prompt: "Use the local-page-diagnostic skill."

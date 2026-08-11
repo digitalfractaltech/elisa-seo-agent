@@ -1,0 +1,4 @@
+name: internal-link-builder-priority
+display_name: "Internal Link Builder Priority"
+short_description: "Build up to three high-quality contextual internal links to one priority target page using On-Page.ai internal link suggestions. Use for money pages and importa"
+default_prompt: "Use the internal-link-builder-priority skill."

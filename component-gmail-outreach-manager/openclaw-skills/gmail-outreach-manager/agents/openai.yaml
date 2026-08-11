@@ -1,0 +1,4 @@
+name: gmail-outreach-manager
+display_name: "Gmail Outreach Manager"
+short_description: "Send approved outreach through Gmail, track thread IDs, classify replies, and update backlink outreach status safely."
+default_prompt: "Use the gmail-outreach-manager skill."

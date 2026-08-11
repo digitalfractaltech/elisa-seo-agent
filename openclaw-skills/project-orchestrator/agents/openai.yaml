@@ -1,0 +1,4 @@
+name: project-orchestrator
+display_name: "Project Orchestrator"
+short_description: "Onboard and coordinate an SEO project from scratch. Use to collect project URL, sitemap, business model, money keywords, competitors, tools, approval rules, dat"
+default_prompt: "Use the project-orchestrator skill."

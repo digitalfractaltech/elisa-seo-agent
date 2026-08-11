@@ -1,0 +1,4 @@
+name: page-audit-pdf
+display_name: "Page Audit Pdf"
+short_description: "Create a focused client-ready SEO audit PDF/HTML for one target page and keyword using Deep Scan data, competitor/entity/speed/internal-link findings, and a 30/"
+default_prompt: "Use the page-audit-pdf skill."

@@ -1,0 +1,4 @@
+name: loop-controller
+display_name: "Loop Controller"
+short_description: "Run Emily skills in run-check-decide loops until the goal is complete, blocked, budget-limited, or approval-gated."
+default_prompt: "Use the loop-controller skill."

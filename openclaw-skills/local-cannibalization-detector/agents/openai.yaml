@@ -1,0 +1,4 @@
+name: local-cannibalization-detector
+display_name: "Local Cannibalization Detector"
+short_description: "Find local SEO cannibalization where multiple pages target the same service + city intent. Use for city/service audits, target market(s) overlap, duplicate loca"
+default_prompt: "Use the local-cannibalization-detector skill."

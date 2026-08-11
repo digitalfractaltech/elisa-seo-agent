@@ -1,0 +1,4 @@
+name: standard-optimizer-single
+display_name: "Standard Optimizer Single"
+short_description: "Standard on-page optimization for one existing page using live SERP/entity data. Use for money pages or new pages that already exist and need relevance, entitie"
+default_prompt: "Use the standard-optimizer-single skill."

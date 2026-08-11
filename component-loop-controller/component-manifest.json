@@ -1,0 +1,12 @@
+{
+  "component": "loop-controller",
+  "created": "2026-06-27",
+  "installs": [
+    "openclaw-skills/loop-controller"
+  ],
+  "optional_system_files": [
+    "productized-vault-system/LOOP_PROTOCOL.md"
+  ],
+  "does_not_overwrite_existing_project_vaults": true,
+  "notes": "Standalone Emily component that adds RUN-CHECK-DECIDE loop behavior for autonomous workflows."
+}

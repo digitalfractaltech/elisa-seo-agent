@@ -1,0 +1,4 @@
+name: client-audit-pdf
+display_name: "Client Audit Pdf"
+short_description: "Create a polished client-ready full website SEO audit PDF/HTML from representative pages using Deep Scans. Use for client reports, sales audits, or agency deliv"
+default_prompt: "Use the client-audit-pdf skill."

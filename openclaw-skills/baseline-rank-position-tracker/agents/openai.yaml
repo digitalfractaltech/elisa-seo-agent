@@ -1,0 +1,4 @@
+name: baseline-rank-position-tracker
+display_name: "Baseline Rank Position Tracker"
+short_description: "Create and maintain baseline keyword rankings, GSC traffic, landing page visibility, and weekly trend snapshots for each project. Use at project onboarding befo"
+default_prompt: "Use the baseline-rank-position-tracker skill."

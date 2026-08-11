@@ -1,0 +1,10 @@
+{
+  "component": "listicle-backlink-outreach-prospector",
+  "created": "2026-05-27",
+  "installs": [
+    "openclaw-skills/listicle-backlink-outreach-prospector"
+  ],
+  "does_not_overwrite_existing_project_vaults": true,
+  "notes": "Standalone Emily component for ethical listicle/resource-page backlink prospecting and outreach queue creation.",
+  "optional_installed_manifest_update": "Add listicle-backlink-outreach-prospector to ~/.openclaw/skills/manifest.json if present."
+}

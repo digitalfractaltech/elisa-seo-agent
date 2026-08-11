@@ -1,0 +1,4 @@
+name: subheadline-optimizer
+display_name: "Subheadline Optimizer"
+short_description: "Tune weak, generic, missing, or misaligned H2/H3 subheadlines on an existing page while preserving title, slug, structure, and human writing. Use when content i"
+default_prompt: "Use the subheadline-optimizer skill."

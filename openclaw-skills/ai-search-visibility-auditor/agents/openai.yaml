@@ -1,0 +1,4 @@
+name: ai-search-visibility-auditor
+display_name: "Ai Search Visibility Auditor"
+short_description: "Audit visibility and recommendations in AI search surfaces such as ChatGPT, GPT-style answers, Google AI Overviews/AI Mode, Perplexity, Gemini, Copilot, and LLM"
+default_prompt: "Use the ai-search-visibility-auditor skill."

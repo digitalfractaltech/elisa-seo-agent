@@ -1,0 +1,4 @@
+name: content-refresher-sitewide
+display_name: "Content Refresher Sitewide"
+short_description: "Refresh old or stale site pages in controlled sitemap batches, oldest modified first. Use for site-wide light SEO refreshes that preserve content while adding m"
+default_prompt: "Use the content-refresher-sitewide skill."

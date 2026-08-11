@@ -1,0 +1,4 @@
+name: keyword-opportunity-miner
+display_name: "Keyword Opportunity Miner"
+short_description: "Find and classify related keywords, low-hanging fruit, GSC opportunities, competitor/ SERP gaps, emerging queries, and keywords worth tracking. Use for continuo"
+default_prompt: "Use the keyword-opportunity-miner skill."

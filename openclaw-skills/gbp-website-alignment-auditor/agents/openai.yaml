@@ -1,0 +1,4 @@
+name: gbp-website-alignment-auditor
+display_name: "Gbp Website Alignment Auditor"
+short_description: "Audit Google Business Profile to website alignment for local SEO. Use to compare GBP categories, services, NAP, hours, website URL, service area, schema, and lo"
+default_prompt: "Use the gbp-website-alignment-auditor skill."

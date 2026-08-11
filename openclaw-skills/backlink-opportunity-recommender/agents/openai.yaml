@@ -1,0 +1,4 @@
+name: backlink-opportunity-recommender
+display_name: "Backlink Opportunity Recommender"
+short_description: "Recommend backlink/link-building opportunities for specific keywords or pages when off-page authority is likely limiting rankings. Use to find competitor link g"
+default_prompt: "Use the backlink-opportunity-recommender skill."
